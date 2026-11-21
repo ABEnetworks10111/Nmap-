@@ -1,0 +1,44 @@
+sudo apt update
+sudo apt install nmap -y
+sudo apt install metasploit-framework -y
+
+msfconsole            
+----------------------------------------------------------------------------------------
+###this executes and lets you use metasploit. Nmap scans . Metasploit takes over and if possible attacks###
+
+nmap [scan type] [options] {dest IP address}
+ex: USEFUL COMMANDS
+"""
+nmap -sn IP    = check if IPhost is reachable
+nmap -sV IP    = identify service versions (research versions for vulnerabilites)
+nmap -sS IP    = perform TCP/SYN scan
+nmap -p1-65535 IP = scan all TCP ports
+nmap -O IP      = Operating System detection
+
+nmap -h  for help. 
+
+----------------------------------------------------------------------------------
+
+nmap -sn 192.168.50.x
+nmap -sV -sS -p1-65535 -O 192.168.50.x
+
+-------------------------------------------------------------------
+RESULTS:
+
+
+
+
+
+
+
+
+****CONCLUSIONS*****
+Windows naturally has windows defender and firewall blocking inbound traffic.
+It only allows a ping ICMP inbound.
+
+That is why the result showed every port closed/filtered/ignored.
+
+Expected. more interesting result will be found in personal / employee devs or purposefully vulnerable ISOs.
+
+
+
