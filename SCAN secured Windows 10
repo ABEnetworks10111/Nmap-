@@ -24,17 +24,16 @@ nmap -sV -sS -p1-65535 -O 192.168.50.x
 
 -------------------------------------------------------------------
 RESULTS:
-
-
-
-
-
-
+Target host is up.
+All 65535 ports scanned are closed and ignored.
+Mac Address found
+OS best guess = Microsoft Windows 10|11|2019 correct
+-----------------------------------------------------------------
 
 
 ****CONCLUSIONS*****
 Windows naturally has windows defender and firewall blocking inbound traffic.
-It only allows a ping ICMP inbound.
+It only allows a ping ICMP inbound. No open ports is a good thing for security.
 
 That is why the result showed every port closed/filtered/ignored.
 
